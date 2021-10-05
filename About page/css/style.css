@@ -1,0 +1,96 @@
+body {
+    border: 15px solid #F6ECF0;
+    margin: 0;
+    height: 1024px;
+    width: 1440px;
+    background-color: #D2CDE3;
+}
+
+.rectangle{
+    height: 756px;
+    width: 818px;
+    position: relative; 
+    top: 128px;
+    left: 480px;
+    margin-right: 103px;
+    margin-bottom: 108px;
+    background: linear-gradient(180deg, rgba(212, 192, 219, 1) 10%, rgba(210, 205, 227, 1) 70%, rgba(246, 233, 241, 1) 100%); 
+}
+
+h2{
+    color: white;
+    font-size: 90px;
+    position: relative;
+    left: -518px;
+    top: -520px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.s1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    width: 710px
+}
+
+img {
+    position: relative;
+    left: 80px;
+    top: 30px;
+}
+
+h1 {
+    font-size: 65px;
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 60px;
+    text-decoration: none;
+    position: relative;
+    top:-1225px;
+    left:320px;    
+}
+
+.white-text {
+    color: white;
+    background-image: url(../images/shape.png);
+    text-align: center;
+    width: 277px;
+    height: 112px;
+}
+
+span {
+    position: absolute;
+    left: 25%;
+    top: 10%; 
+}
+
+.circle{
+    height: 340px;
+    width: 340px;
+    background: linear-gradient(180deg, rgba(197, 192, 215, 0.8) 5%, rgba(228, 224, 240, 0.8) 85%, rgba(210, 205, 227, 0.75) 100%);
+    border-radius: 50%;
+    position: relative;
+    top: -865px;
+    left: 1px;
+    transform: rotate(-30deg);
+}
+
+aside{
+    height: 240px;
+    width: 240px;
+    background: linear-gradient(180deg, rgba(197, 192, 215, 0.8) 5%, rgba(228, 224, 240, 0.8) 85%, rgba(210, 205, 227, 0.75) 100%);
+    border-radius: 50%;
+    position: relative;
+    top: -950px;
+    left: 2px;
+    opacity: 70%;
+    transform: rotate(90deg);
+}
