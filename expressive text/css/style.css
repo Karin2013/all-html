@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+    margin-top: 900px;
+    margin-bottom: 300px;
+    margin-right: 300px;
+    margin-left: 300px;
+    background: hsl(204 100% 5%);
+    color: white;
+    min-block-size: 200vh;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+  
+}
+
+@font-face {
+  font-family: 'Sangli';
+    src: url('font/Sangli-NorReg_1.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Heavy';
+    src: url('font/FuturaBT-Heavy.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Meduim';
+    src: url('font/FuturaBT-Medium.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+h1 {
+  font-family: "Futura Heavy";
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: "Futura Meduim";
+  font-size: 30px;
+}
+
+.glow {
+  line-height: 250%;
+  font-size: 70px;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #ab88ec, 0 0 40px #ab88ec, 0 0 50px #ab88ec, 0 0 60px #ab88ec, 0 0 70px #ab88ec;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 30px #7168ee, 0 0 40px #7168ee, 0 0 50px #7168ee, 0 0 60px #7168ee, 0 0 70px #7168ee, 0 0 80px #7168ee;
+  }
+}
+
+article {
+    background: radial-gradient(
+      hsl(300 100% 88%), 
+      hsl(200 100% 60%) 
+    ) fixed;
+    background: conic-gradient(
+      hsl(200 100% 60%), 
+      hsl(300 100% 88%), 
+      hsl(200 100% 60%) 
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  } 
+
+  div {
+    display: none;
+  }
+    
+  span:hover + div {
+    display: block;
+  }
+ 
+
+p {
+    font-family: "Sangli";
+    line-height: 1.35;
+    font-size: 30px;
+}
+ 
+a.drop:hover {
+  text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #ab88ec, 0 0 40px #ab88ec, 0 0 50px #ab88ec, 0 0 60px #ab88ec, 0 0 70px #ab88ec;
+}
+a.drop{
+  line-height: 400%;
+}
+
+a.ex2:hover, a.ex2:active {font-size: 150%;  }
+
+a.ele:hover {
+  text-shadow: 0 0 5px #fff;
+}
+
+a.ele:hover, a.ex:active {
+  animation: fadeOut ease 3s; animation-duration: 3s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
