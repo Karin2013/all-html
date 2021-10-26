@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    width:100%
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 110px;
+    grid-template-rows: 45px 45px;
+    grid-auto-flow: column;
+    height: 100px;
+    background: #ECECEC;
+    grid-gap: 40px 60px;
+    padding: 59px;
+    margin-bottom: 15px;
+}   
+
+.a {
+    height: 90px;
+    width: 90px;
+    align-self: center;
+    background: #9D90D1;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.b {
+    height: 33px;
+    background: #9D90D1;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: top;
+}
+
+.c {
+    height: 33px;
+    background: #9D90D1;
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    align-self: top;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 150px;
+    grid-auto-flow: column;
+    height: 350px;
+    background: #ECECEC;
+    grid-gap: 10px 64px;
+    padding: 59px;
+    margin-bottom: 15px;
+}   
+
+.d {
+    height: 200px;
+    background: #A7CDEF;
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    align-self: top;
+}
+
+@media (max-width: 900px) {
+    .grid-container2 {
+        padding: 30px;
+        margin-bottom: 15px;
+    }   
+    
+}
+
+main {
+    display: grid;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+  }
+
+.sidebar-left {
+    grid-column: 1;
+    background-color: beige;
+  }
+  
+.box1 {
+    position: center;
+    grid-column: 2;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 875px;
+    background: #ECECEC;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;;
+}
+  
+.sidebar-right {
+    grid-column: 3;
+    background-color: beige;
+}
+  
+aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    list-style: none;
+    padding: 33px;
+}
+
+aside li div {
+    background: #9D90D1;
+    height: 212px;
+    width: 100%;
+}
+
+.box1 ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+
+.box1 ul {
+    display: grid;
+    grid-template-rows: 120px 250px 280px;
+    column-gap: 50px;
+    row-gap: 40px;
+}
+
+.item1 {
+    width: 100%;
+    background: #9D90D1;
+    grid-row: 1 / span 1;
+}
+
+.item2 {
+    width: 100%;
+    background: #9D90D1;
+    grid-row: 2 / span 1;
+}
+
+.item3 {
+    width: 100%;
+    background: #9D90D1;
+    grid-row: 3 / span 1;
+}
+
+
+@media (max-width: 900px) {
+    
+    .sidebar-left{
+        display: none;
+    }
+
+    .grid1 {
+        grid-template-columns: auto 25%;
+    }
+
+    .box1 {
+        grid-column: 1;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;;
+    }
+    
+    .box1 ul {
+        display: grid;
+        grid-template-rows: 120px 250px 280px;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+
+    .sidebar-right {
+        grid-column: 2;
+        background-color: beige;
+    }
+
+    aside li {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    aside li div {
+        height: 120px;
+    }
+    
+}
+
+.box2 header {
+    height: 140px;
+    background: #9D90D1;
+    margin-bottom: 30px;
+}
+
+.box2 {
+    margin-top: 20px;
+    background: #ECECEC;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 70px;;
+}
+
+.box2 ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    justify-items: center;
+}
+
+.box2 ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.box2 .item {
+    height: 400px;
+    width: 100%;
+    background: #9D90D1;
+}
+
+.item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+@media (max-width: 900px) {
+
+    .box2 {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 40px;;
+    }
+    .box2 ul {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+
+    .box2 .item { 
+        width:100%;
+    }
+    
+}
+
+.box3 {
+    margin-top: 20px;
+    background: #ECECEC;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 40px;
+    padding-bottom: 0px;;
+}
+
+.box3 header {
+    height: 150px;
+    background: #9D90D1;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.box3 ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    justify-items: center;
+}
+
+.box3 ul {
+    display: grid;
+    grid-template-columns: 25%;
+    column-gap: 80px;
+    row-gap: 80px;
+}
+
+.box3 .item {
+    height: 350px;
+    width: 100%;
+    background: #9D90D1;
+    margin-left: 450px;
+    margin-bottom: 10px;
+}
+
+.item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+@media (max-width: 900px) {
+    .box3 .item {
+     width: 150%;
+     margin-left: 180px;
+     margin-bottom: 10px;
+   }
+
+}
+
+
+.box12 header {
+    height: 30px;
+    background: #9D90D1;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.box12 {
+    margin-top: 20px;
+    background: #ECECEC;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 25px;
+    padding-bottom: 60px;;
+}
+
+.box12 ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    justify-items: center;
+}
+
+.box12 ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 218px 218px;
+    column-gap: 40px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.box12 .item1 {
+    height: 485px;
+    background: #9D90D1;
+    grid-column: 1 /span 1;
+    grid-row: 1 / span 2;
+}
+
+.box12 .item2 {
+    height: 485px;
+    background: #9D90D1;
+    grid-column: 2 /span 1;
+    grid-row: 1 / span 2;
+}
+
+.box12 .item {
+    width:100%;
+    background: #9D90D1;
+}
+
+@media (max-width: 900px) {
+
+    .box12 header {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .box12 {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 25px;
+        padding-bottom: 30px;;
+    }
+
+    .box12 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 218px 218px 218px;
+        column-gap: 20px;
+        row-gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .box12 .item1 {
+        height: 100%;
+        grid-column: 1 /span 1;
+        grid-row: 1 / span 1;
+    }
+    
+    .box12 .item2 {
+        height: 100%;
+        background: #9D90D1;
+        grid-column: 2 /span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .box12 .item {
+        width: 100%;
+    }
+
+}
